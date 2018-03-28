@@ -1,0 +1,211 @@
+<head>
+  <title>Code Page</title>
+    <link rel="icon" type="image/png" href="../img/code.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="java.js"> 
+    
+    <link href="ba" rel="stylesheet/sass" type="text/css">
+<link href="ba.scss" rel="stylesheet/scss" type="text/css">
+</head>
+<div class='keypad'>
+   <!-- <img src="../img/zamok.png" width="40px" height="40px">-->
+       <input type='text' id='keypad-display' class='display' placeholder='Enter Code' maxlength='6'>
+    <div class='keys'>
+      <div class='row'>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+      </div>
+      <div class='row'>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+      </div>
+      <div class='row'>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+      </div>
+      <div class='row'>
+          
+        <button id='keypad-clear'><i class='fa fa-trash'></i></button>
+        <button>0</button>
+        <button id='keypad-enter'><i class='fa fa-sign-in'></i></button>
+          
+      </div>
+    </div>
+   <a href="main.html"> <div class='access'><button style="border-radius: 30px">YESS</button></div> </a>
+    <div class='noaccess'>“ Password incorrect! ”  <a class="keypad-tryagain"><i class='fa fa-refresh'></i></a></div>
+</div> 
+<img src="../img/sign.png" class="img">
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Inconsolata|Amarante|Iceland:400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: mistyrose;
+        
+    }
+}
+       * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+    body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      margin: 2em 2em;
+      background: 	#A9A9A9;
+  }
+
+
+.img{
+     width: 795px;
+    height: 500px;
+    position: absolute;
+    top: 80px;
+    left: 50px; 
+    }
+.keypad{
+ position: absolute;
+ top: 100px;
+ right: 130px;
+  width: 100%;
+    height: 50%;           /* karanq hanenq hetevinn*/
+  border-radius: 25px;
+  border: solid thin #D2AEAE;
+  padding: 10px;
+  max-width: 350px;
+  background-color: #D2AEAE;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04), inset 0 1px rgba(255, 255, 255, 0.04), inset 0 -1px rgba(0, 0, 0, 0.15), 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.keypad-tryagain{
+  color: white;
+  font-size: 10pt;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+
+.access{
+  color: #D2AEAE;
+  font-family: Iceland;
+  font-size: 14pt;
+  display: none;
+}
+.noaccess{
+  color: red;
+  font-family: Iceland;
+  font-size: 14pt;
+  display: none;
+}
+.keypad .display{
+  margin-left: -3px;
+  border-radius: 5px;
+  font-size: 15pt;
+  font-family: Iceland;
+  height: 40px;
+  width: 210px;
+  text-align: center;
+  color: #D2AEAE;
+  outline: none;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background: #222;
+  border: none;
+  padding: 3px;
+  -webkit-box-shadow: inset 2px 2px 3px -1px #000;
+  -moz-box-shadow: inset 2px 2px 3px -1px #000;
+  -o-box-shadow: inset 2px 2px 3px -1px #000;
+  box-shadow: inset 2px 2px 3px -1px #000;
+  border: solid thin black;
+}
+
+.keypad button:hover{
+  color: red;
+}
+.keypad button:active{
+  -webkit-box-shadow: inset 2px 2px 3px -1px gray;
+  -moz-box-shadow: inset 2px 2px 3px -1px gray;
+  -o-box-shadow: inset 2px 2px 3px -1px gray;
+  box-shadow: inset 2px 2px 3px -1px gray;
+}
+.keypad button{
+  margin: 2px;
+  height: 50px;
+  font-size: 20pt;
+  width: 70px;
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: inset -2px -2px 3px -1px gray;
+  -moz-box-shadow: inset -2px -2px 3px -1px gray;
+  -o-box-shadow: inset -2px -2px 3px -1px gray;
+  box-shadow: inset -2px -2px 3px -1px gray;
+  outline: none;
+  padding: 1px;
+  border-radius: 5px;
+  min-height: 30px;
+  min-width: 30px;
+}
+/* screeni texasharji hamaar*/
+    
+</style>
+
+
+
+<script>
+
+    
+    
+key = "";
+hidden = "";
+passcode = "454818";
+
+$(".row button").click(function(){
+  var character = $(this).text();
+  if (key.length < 6){
+    key = key+character;
+    hidden = hidden+"*";
+    $("#keypad-display").attr("value", hidden);
+  }
+})
+$("#keypad-clear").click(function(){
+  key = "";
+  hidden = "";
+  $("#keypad-display").attr("value", hidden);
+})
+$(".keypad-tryagain").click(function(){
+  $(".noaccess").slideUp("slow");
+  $(".access").slideUp("slow");
+  $(".keys").slideDown("slow");
+  $("#keypad-display").attr("disabled", "enabled"); 
+  key = "";
+  hidden = "";
+  $("#keypad-display").attr("value", hidden);
+})
+$("#keypad-enter").click(function(){
+  $("#keypad-display").attr("disabled", "disabled"); 
+  $(".keys").slideUp("slow",function(){
+      if (key == passcode){
+        $(".access").slideDown();
+      } else {
+        $(".noaccess").slideDown();
+      }
+    });
+})
+
+
+</script>

@@ -1,0 +1,47 @@
+ 
+body {
+    
+    font-family:Helvetica;
+    font-size:18px;
+    color: #4d4d4d;
+}
+/* verevi masi styling */
+
+#navbar {
+  overflow: hidden;
+  background-color: #D2AEAE;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: dimgrey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}

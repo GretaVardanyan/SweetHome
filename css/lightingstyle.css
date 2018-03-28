@@ -1,0 +1,346 @@
+/*droshaki position */
+ .ok{
+                    position: absolute;
+                    top:25px;
+                    right: 60px;
+                }
+body {
+    
+    font-family:Helvetica;
+    font-size:18px;
+    color: #4d4d4d;
+}
+
+/* verevi masi styling */
+
+#navbar {
+  overflow: hidden;
+  background-color: #D2AEAE;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: dimgrey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+/* LAMPERI NKARNER  */
+
+ .myImage1{
+                position: absolute;
+                top: 420px;
+                right: 1100px;
+                padding: 5px;
+                
+            }
+ .myImage2{
+                position: absolute;
+                top: 720px;
+                right: 1100px;
+                padding: 5px;
+                
+            }
+
+ .myImage3{
+                position: absolute;
+                top: 620px;
+                left: 650px;
+                padding: 5px;
+                
+            }
+.bool{
+                 position: absolute;
+                 top: 320px;
+                 left: 380px;
+                 width: 120px;
+                 height: 490px;
+                
+            }
+
+/* MODALI STYLE  */
+
+.modalbox .box {
+    position: absolute;
+    background-color: hsla(290,60%,70%,0.3));
+    height: 250px;
+    min-width: 500px;
+    top: 300px;
+    left: 970px;
+    
+    
+    }
+    .modalbox .title {
+    border-bottom: 2px solid gray;
+    font-family: verdana;
+    font-size: 22px;
+    letter-spacing: 0.4em;
+    margin: 0;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+    color: maroon;
+        }
+   
+
+.modalbox .close {
+    color: maroon;
+    display: block;
+    float: right;
+    font-family: Verdana;
+    font-size: 22px;
+    text-decoration: none;
+        }
+
+
+.modalbox{
+    display: none;
+    position: fixed;
+   z-index: 9999;   /* amen bani vra ga */
+    top: 0;
+    }
+
+.modalbox:target {
+    display: block;
+    outline: none;
+}
+
+
+
+
+/* STYLE FOR DIFFERENT COLOR   */
+ body {
+        background-color: gainsboro;
+    }     
+        
+        
+    .container {
+  background-size: cover;
+  background: rgb(226,226,226); /*  */
+  background: -moz-linear-gradient(top,  rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(226,226,226,1)), color-stop(50%,rgba(219,219,219,1)), color-stop(51%,rgba(209,209,209,1)), color-stop(100%,rgba(254,254,254,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+  padding: 20px;
+}
+
+.led-box {
+  height: 60px;
+  width: 25%;
+  margin: 8px 0;
+  float: left;
+}
+
+.led-box p {
+  font-size: 10px;
+  text-align: center;
+  margin: 1em;
+}
+
+.led-red {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #F00;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+  -webkit-animation: blinkRed 0.5s infinite;
+  -moz-animation: blinkRed 0.5s infinite;
+  -ms-animation: blinkRed 0.5s infinite;
+  -o-animation: blinkRed 0.5s infinite;
+  animation: blinkRed 0.5s infinite;
+}
+
+
+@keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+
+.led-red1 {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #eda3ed;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset violet 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+  -webkit-animation: blinkRed1 0.5s infinite;
+  -moz-animation: blinkRed1 0.5s infinite;
+  -ms-animation: blinkRed1 0.5s infinite;
+  -o-animation: blinkRed1 0.5s infinite;
+  animation: blinkRed1 0.5s infinite;
+}
+
+
+@keyframes blinkRed1 {
+    from { background-color: blueviolet; }
+    50% { background-color: #b221b2; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #492449 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #6d026d; }
+}
+
+.led-yellow {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #FF0;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 12px;
+  -webkit-animation: blinkYellow 1s infinite;
+  -moz-animation: blinkYellow 1s infinite;
+  -ms-animation: blinkYellow 1s infinite;
+  -o-animation: blinkYellow 1s infinite;
+  animation: blinkYellow 1s infinite;
+}
+
+@-webkit-keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
+    to { background-color: #FF0; }
+}
+
+.led-yellow1 {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: pink;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #c96274 0 -1px 9px, #FF0 0 2px 12px;
+  -webkit-animation: blinkYellow1 1s infinite;
+  -moz-animation: blinkYellow1 1s infinite;
+  -ms-animation: blinkYellow1 1s infinite;
+  -o-animation: blinkYellow1 1s infinite;
+  animation: blinkYellow1 1s infinite;
+}
+
+@-webkit-keyframes blinkYellow1 {
+    from { background-color: #FFC7E5; }
+    50% { background-color: #FF4FAE; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #FF4FAE 0 -1px 9px, #FF0 0 2px 0; }
+    to { background-color: deeppink; }
+}
+
+.led-green {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #ABFF00;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+    -webkit-animation: blinkGreen 1s infinite;
+  -moz-animation: blinkGreen 1s infinite;
+  -ms-animation: blinkGreen 1s infinite;
+  -o-animation: blinkGreen 1s infinite;
+  animation: blinkGreen 1s infinite;
+}
+
+@-webkit-keyframes blinkGreen {
+    from { background-color: greenyellow; }
+    50% { background-color: lawngreen; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
+    to { background-color: green; }
+}
+.led-blue {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #24E0FF;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006 0 -1px 9px, #3F8CFF 0 2px 14px;
+    -webkit-animation: blinkBlue 1s infinite;
+  -moz-animation: blinkBlue 1s infinite;
+  -ms-animation: blinkBlue 1s infinite;
+  -o-animation: blinkBlue 1s infinite;
+  animation: blinkBlue 1s infinite;
+}  
+        @-webkit-keyframes blinkBlue {
+    from { background-color: skyblue; }
+    50% { background-color: blue; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
+            to { background-color: #000099; } }
+  
+.led-green1 {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #ABFF00;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #4c1111 0 2px 12px;
+    -webkit-animation: blinkGreen1 1s infinite;
+  -moz-animation: blinkGreen1 1s infinite;
+  -ms-animation: blinkGreen1 1s infinite;
+  -o-animation: blinkGreen1 1s infinite;
+  animation: blinkGreen1 1s infinite;
+}
+
+@-webkit-keyframes blinkGreen1 {
+    from { background-color: 	#800000; }
+    50% { background-color: #e06969; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
+    to { background-color: #490d0d; }
+}
+
+  
+.led-blue1 {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #24E0FF;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006 0 -1px 9px, #3F8CFF 0 2px 14px;
+    -webkit-animation: blinkBlue1 1s infinite;
+  -moz-animation: blinkBlue1 1s infinite;
+  -ms-animation: blinkBlue1 1s infinite;
+  -o-animation: blinkBlue1 1s infinite;
+  animation: blinkBlue1 1s infinite;
+}  
+        @-webkit-keyframes blinkBlue1 {
+    from { background-color: skyblue; }
+    50% { background-color: deepskyblue; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
+    to { background-color: paleturquoise; }
+            
+            } 
+            
+
+/* curtain */
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
